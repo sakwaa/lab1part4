@@ -15,44 +15,44 @@ public class CarpetDriver {
         while(moreQuotes && currentQuote < maxQuotes) {
         	selection = in.next();
         	int index = 0;
-          //   switch(selection) {
-          //       case "add":
-          //       	carpetHistory[currentQuote] = getQuote();
-          //   		currentQuote++;
-          //   		break;
-          //       case "view":
-          //       	index = in.nextInt();
-          //       	if(index <= maxQuotes && index > 0 && carpetHistory[index-1] != null) {
-          //       		System.out.println("Carpet Cost: $" + carpetHistory[index-1].getTotalCost() + " (" +  
-          //       			carpetHistory[index-1].roomDimension.length + "x" + carpetHistory[index-1].roomDimension.width + 
-          //       			" @ $" + carpetHistory[index-1].carpetCost + ")");
-          //       	} else {
-          //       		System.out.println("No quote found for carpet " + index);
-          //       	}
-          //       	break;
-          //   	case "del":
-          //   		index = in.nextInt();
-          //   		if(index <= maxQuotes && index > 0  && carpetHistory[index-1] != null) {
-          //   			carpetHistory[index-1] = null;
-          //   			System.out.println("Successfully removed quote for carpet " + index);
-          //   		} else {
-          //   			System.out.println("No quote found for carpet " + index);	
-          //   		}
-          //   		break;
-        		// case "quit": 
-        		// 	System.out.println("Goodbye.");
-        		// 	System.exit(0);
-        		// 	break;
-        		// case "help":
-          //       default:
-          //       	System.out.println("\nCarpetDriver v1.0");
-          //   		System.out.println("add: add a new carpet quote.");
-          //   		System.out.println("view (quote #): view a previously evaluated carpet quote.");
-          //   		System.out.println("del (quote #): delete a quote from the carpet quote history.");
-          //   		System.out.println("quit: exit CarpetDriver.");
-          //   		System.out.println("help: display this help message.");
-          //   		break;
-          //   }
+            switch(selection) {
+                case "add":
+                	carpetHistory[currentQuote] = getQuote();
+            		currentQuote++;
+            		break;
+                case "view":
+                	index = in.nextInt();
+                	if(index <= maxQuotes && index > 0 && carpetHistory[index-1] != null) {
+                		System.out.println("Carpet Cost: $" + carpetHistory[index-1].getTotalCost() + " (" +  
+                			carpetHistory[index-1].roomDimension.length + "x" + carpetHistory[index-1].roomDimension.width + 
+                			" @ $" + carpetHistory[index-1].carpetCost + ")");
+                	} else {
+                		System.out.println("No quote found for carpet " + index);
+                	}
+                	break;
+            	case "del":
+            		index = in.nextInt();
+            		if(index <= maxQuotes && index > 0  && carpetHistory[index-1] != null) {
+            			carpetHistory[index-1] = null;
+            			System.out.println("Successfully removed quote for carpet " + index);
+            		} else {
+            			System.out.println("No quote found for carpet " + index);	
+            		}
+            		break;
+        		case "quit": 
+        			System.out.println("Goodbye.");
+        			System.exit(0);
+        			break;
+        		case "help":
+                default:
+                	System.out.println("\nCarpetDriver v1.0");
+            		System.out.println("add: add a new carpet quote.");
+            		System.out.println("view (quote #): view a previously evaluated carpet quote.");
+            		System.out.println("del (quote #): delete a quote from the carpet quote history.");
+            		System.out.println("quit: exit CarpetDriver.");
+            		System.out.println("help: display this help message.");
+            		break;
+            }
         }
     }
     public static RoomCarpet getQuote() {
