@@ -10,6 +10,6 @@ public class RoomCarpet {
         this.carpetCost = cost;
     }
     protected double getTotalCost() {
-        return this.roomDimension.getArea() * this.carpetCost;
+        return 0; //this.roomDimension.getArea() * this.carpetCost;
     }
 }
