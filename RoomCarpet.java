@@ -1,5 +1,6 @@
 // Sakwa Alvitre
-// Lab1Part4
+// Lab1 Part4
+
 
 public class RoomCarpet {
     protected RoomDimension roomDimension;

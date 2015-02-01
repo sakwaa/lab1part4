@@ -1,5 +1,5 @@
 // Sakwa Alvitre
-// Lab1Part4
+// Lab1 Part4
 
 public class RoomDimension {
     protected double length;
